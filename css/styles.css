@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+/* Base styles */
+:root {
+  /* Primary colours */
+  --primary-colour-1: hsl(322, 100%, 66%);
+
+  /* Neutral colors */
+  --neutral-colour-1: hsl(193, 100%, 96%);
+  --neutral-color-2: hsl(192, 100%, 9%);
+  --neutral-color-3: hsl(208, 11%, 55%);
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 18px;
+}
+
+h1,h2 {
+  font-family: Poppins, sans-serif;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 595px;
+  max-height: 420px;
+}
+
+.logo {
+  width: 100%;
+  border-color: blue;
+}
+
+.logo-link {
+  flex: 0 0 208px;
+}
+
+.cta-btn {
+  
+}
+.cta-btn-1 {
+  flex: 0 0 192px;
+}
+
+.info-headquarters::before {
+  content: url(../images/icon-location.svg);
+}
+.info-phone::before {
+  content: url(../images/icon-phone.svg);
+}
+.info-email::before {
+  content: url(../images/icon-email.svg);
+}
+
+/* Mobile-first grid system */
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-social {
+  display: flex;
+}
+
+/* Media queries */
+@media only screen and (min-width: 768px) {
+  /* Grid system */
+
+  /* Base styles */
+}
